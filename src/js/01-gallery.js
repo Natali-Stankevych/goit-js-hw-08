@@ -1,11 +1,11 @@
-// Add imports above this line
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
+// Add imports above this line
 import { galleryItems } from './gallery-items';
 
 // Change code below this line
 
-console.log(galleryItems);
+// console.log(galleryItems);
 // console.log(SimpleLightbox);
 const imegesContainer = document.querySelector(".gallery");
 
@@ -18,7 +18,6 @@ const marcup = galleryItems.map(({ preview, original, description }) =>
   .join(" ");
 
 imegesContainer.insertAdjacentHTML("beforeend", marcup);
-
 
     new SimpleLightbox('.gallery a', {
         captions: true,
